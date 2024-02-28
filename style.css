@@ -144,6 +144,9 @@ section{
     margin-left: 1rem;
     font-size: 2rem;
 }
+.socials i:hover{
+    scale: 1.5;
+}
 
 
 /* Contact-us custom css */
