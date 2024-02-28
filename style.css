@@ -7,25 +7,28 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    
 }
+
+
+
 section{
     padding: 0;
     margin: 0;
     height: max-content;
+    padding-top: 90px;
+
 }
 
  /* Header custom css */
 
 .navbar-brand img{
-    width: 10rem;
-    height: 8rem;
+    width: 8rem;
+    height: 4rem;
 }
 
 .navbar{
     width: 100%;
     padding-left: 2rem;
-    height: 8rem;
     border-bottom: 1px dotted;
     z-index: 100;
 }
@@ -235,7 +238,7 @@ section{
 
 .icons{
     display: flex;
-    width: 18rem;
+    width: auto;
     height: 28rem;
     padding: 3rem;
     flex-direction: column;
@@ -246,6 +249,122 @@ section{
         margin-bottom: 5rem;
     }
 }
+
+.icons i:hover{
+    scale: 1.5;
+}
+
+/* Pop-up forms custom css */
+
+.sec-4{
+    transition: top oms ease-in-out 200ms,opacity 200ms ease-in-out0ms,transform 20ms ease-in-out0ms;
+    opacity: 0;
+    scale: 0;
+    display: none;
+}
+
+.sec-4.active{
+    transition: top oms ease-in-out 200ms,opacity 200ms ease-in-out0ms,transform 20ms ease-in-out0ms;
+    opacity: 1;
+    scale: 1;
+    display: block;
+}
+
+.forms-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.forms-img{
+    width: 30rem;
+    background-image: url(images/company-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    height: 40rem;
+}
+.forms-details{
+    height: 40rem;
+    width: 30rem;
+    padding: 1rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forms-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.forms-logo{
+    width: 12rem;
+    height: 8rem;
+}
+
+.close-btn{
+    width: max-content;
+    height: max-content;
+    padding: 6px;
+    align-self: flex-end;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        color: green;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+.form-element{
+    width: 100%;
+}
+
+.form-element label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-element input{
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.book{
+    width: 100%;
+    border: 1px solid;
+    margin-top: 2rem;
+    background: rgb(220, 233, 224);
+    border-radius: 50px;
+    padding:7px 16px;
+    font-weight: 600;
+}
+
+
 
 
 /* Media queries for mobile screens */
@@ -291,9 +410,12 @@ section{
         grid-gap: 4rem !important;
     }
 
-    .contact-box{
-        flex-direction: column;
-        gap: 2rem;
+    .icons i:hover{
+        scale: none !important;
+    }
+    
+    .forms-img{
+        display: none;
     }
     
 }
@@ -329,8 +451,22 @@ section{
         grid-template-columns: repeat(2,1fr);
     }
 
+    .card-group{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 4rem;
+    }
+
     .us-card{
         grid-gap: 2rem;
+    }
+
+    .icons i:hover{
+        scale: none !important;
+    }
+
+    .forms-img{
+        display: none;
     }
 }
 
