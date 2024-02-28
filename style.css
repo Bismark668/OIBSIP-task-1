@@ -145,8 +145,11 @@ section{
     font-size: 2rem;
 }
 
+
+/* Contact-us custom css */
+
 .contact-home{
-    height: 100vh;
+    height: max-content;
     width: 100%;
     padding: 2rem 0;
 }
@@ -364,6 +367,104 @@ section{
     font-weight: 600;
 }
 
+/* footer custom css */
+
+footer{
+    background-color: rgb(33, 32, 34);
+    color: white;
+}
+
+.fotter-home{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 3px solid  white;
+}
+
+.fonter-content{
+    padding:  0 2rem;
+
+    h4{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    p{
+        font-weight: lighter;
+        margin-bottom: 20px;
+        
+    }
+}
+
+.footer-socilas{
+    display: flex;
+    
+    h2 a{
+        width: 15px;
+        height: 15px;
+        color: white;
+        margin-left: 20px;
+        border: 2px solid gainsboro;
+        border-radius: 50%;
+        padding: 5px 10px;
+        background: rgb(63, 61, 61);
+    }
+}
+
+.fonter-navigation{
+    padding: 0 2rem;
+    margin-left: 35%;
+
+    h4{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    a{
+        font-weight: lighter;
+        color: green;
+    }
+}
+
+.copy-right{
+    background-color: gray;
+}
+.copy-tittle{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    h4{
+        align-self: end;
+        color: black;
+    }
+    h3{
+        color: black;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    h4{
+        font-weight: lighter;
+        color: black;
+
+    }
+}
+
 
 
 
@@ -415,6 +516,18 @@ section{
     }
     
     .forms-img{
+        display: none;
+    }
+
+    .fonter-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .fonter-navigation{
         display: none;
     }
     

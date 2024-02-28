@@ -32,3 +32,10 @@ closeBtn.addEventListener('click',function(){
     let formsSection = document.querySelector('.sec-4')
     formsSection.classList.remove('active')
 })
+
+// Display curretn year at the footer
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+   });
